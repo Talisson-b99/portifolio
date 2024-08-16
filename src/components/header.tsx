@@ -1,8 +1,6 @@
 import Image from 'next/image'
-import Link from 'next/link'
 
 import LinkAnimate from './linkAnimate'
-import { Button } from './ui/button'
 
 const Header = () => {
   return (
@@ -24,9 +22,9 @@ const Header = () => {
         </ul>
       </nav>
 
-      <Button className="relative rounded-none bg-[#00A8F5] font-bold text-white after:absolute after:h-6 after:w-6 after:bg-[#F5710A] after:content-['']">
+      <button className="hover:none relative rounded-none bg-[#00A8F5] px-3 py-2.5 font-bold text-white after:absolute after:-right-1 after:-top-1 after:-z-10 after:h-6 after:w-11 after:bg-[#F5710A] after:content-['']">
         DOWNLOAD CV
-      </Button>
+      </button>
     </header>
   )
 }
